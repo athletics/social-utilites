@@ -108,7 +108,7 @@ class Social_Utilities {
 
 		$username = esc_attr( $username );
 
-		$button = <<<'EOT'
+		$button = <<<EOT
 <div class="fb-follow" data-href="https://www.facebook.com/{$username}" data-colorscheme="{$args['color_scheme']}" data-layout="{$args['layout']}" data-show-faces="{$args['show_faces']}"></div>
 EOT;
 
@@ -142,7 +142,7 @@ EOT;
 
 		$url = esc_attr( $url );
 
-		$button = <<<'EOT'
+		$button = <<<EOT
 <div class="fb-like" data-href="{$url}" data-action="{$args['action']}" data-colorscheme="{$args['color_scheme']}" data-layout="{$args['layout']}" data-show-faces="{$args['show_faces']}"></div>
 EOT;
 
@@ -174,7 +174,7 @@ EOT;
 
 		$page_id = esc_attr( $page_id );
 
-		$button = <<<'EOT'
+		$button = <<<EOT
 <div class="g-follow" data-href="https://plus.google.com/{$page_id}" data-annotation="{$args['annotation']}" data-height="{$args['height']}" data-rel="{$args['rel']}"></div>
 EOT;
 
@@ -211,7 +211,7 @@ EOT;
 		$username = str_replace( '@', '', $username );
 		$username = esc_attr( $username );
 
-		$button = <<<'EOT'
+		$button = <<<EOT
 <a href="https://twitter.com/{$username}" class="twitter-follow-button" data-show-screen-name="{$args['show_screen_name']}" data-show-count="{$args['show_count']}" data-size="{$args['size']}" data-lang="{$args['lang']}" data-dnt="{$args['opt_out']}">Follow @{$username}</a>
 EOT;
 
