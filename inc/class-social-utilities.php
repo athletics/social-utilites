@@ -84,4 +84,107 @@ class Social_Utilities {
 
 	}
 
+	/**
+	 * Facebook Follow Button
+	 *
+	 * @see https://developers.facebook.com/docs/plugins/follow-button
+	 * @param string $username Facebook URL to follow.
+	 * @param array $args Optional settings for the follow button.
+	 * @return string $button Follow button markup.
+	 */
+	public static function facebook_follow_button( $username, $args = array() ) {
+
+		$defaults = array(
+			// 'light' or 'dark'
+			'color_scheme' => 'light',
+			// 'standard', 'button_count', 'button', or 'box_count'
+			'layout' => 'button_count',
+			// 'true' or 'false'
+			'show_faces' => 'false',
+		);
+
+		$args = wp_parse_args( $args, $defaults );
+		$args = array_map( 'esc_attr', $args );
+
+		$username = esc_attr( $username );
+
+		$button = <<<'EOT'
+<div class="fb-follow" data-href="https://www.facebook.com/{$username}" data-colorscheme="{$args['color_scheme']}" data-layout="{$args['layout']}" data-show-faces="{$args['show_faces']}"></div>
+EOT;
+
+		return $button;
+
+	}
+
+	/**
+	 * Facebook Like Button
+	 *
+	 * @see https://developers.facebook.com/docs/plugins/like-button
+	 * @param string $url The URL to like.
+	 * @param array $args Optional settings for the like button.
+	 * @return string $button Like button markup.
+	 */
+	public static function facebook_like_button( $url, $args = array() ) {
+
+		$defaults = array(
+			// 'like' or 'recommend'
+			'action' => 'like',
+			// 'light' or 'dark'
+			'color_scheme' => 'light',
+			// 'standard', 'button_count', 'button', or 'box_count'
+			'layout' => 'button_count',
+			// 'true' or 'false'
+			'show_faces' => 'false',
+		);
+
+		$args = wp_parse_args( $args, $defaults );
+		$args = array_map( 'esc_attr', $args );
+
+		$url = esc_attr( $url );
+
+		$button = <<<'EOT'
+<div class="fb-like" data-href="{$url}" data-action="{$args['action']}" data-colorscheme="{$args['color_scheme']}" data-layout="{$args['layout']}" data-show-faces="{$args['show_faces']}"></div>
+EOT;
+
+		return $button;
+
+	}
+
+	/**
+	 * Twitter Follow Button
+	 *
+	 * @see https://dev.twitter.com/docs/follow-button
+	 * @param string $username Twitter user to follow.
+	 * @param array $args Optional settings for the follow button.
+	 * @return string $button Follow button markup.
+	 */
+	public static function twitter_follow_button( $username, $args = array() ) {
+
+		$defaults = array(
+			// 'true' or 'false'
+			'show_screen_name' => 'true',
+			// 'true' or 'false'
+			'show_count' => 'true',
+			// 'medium' or 'large'
+			'size' => 'medium',
+			// 'en', 'fr', 'de', 'it', 'es', 'ko', or 'ja'
+			'lang' => 'en',
+			// 'true' or 'false'
+			'opt_out' => 'true',
+		);
+
+		$args = wp_parse_args( $args, $defaults );
+		$args = array_map( 'esc_attr', $args );
+
+		$username = str_replace( '@', '', $username );
+		$username = esc_attr( $username );
+
+		$button = <<<'EOT'
+<a href="https://twitter.com/{$username}" class="twitter-follow-button" data-show-screen-name="{$args['show_screen_name']}" data-show-count="{$args['show_count']}" data-size="{$args['size']}" data-lang="{$args['lang']}" data-dnt="{$args['opt_out']}">Follow @{$username}</a>
+EOT;
+
+		return $button;
+
+	}
+
 }
