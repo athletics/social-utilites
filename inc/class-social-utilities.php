@@ -151,6 +151,38 @@ EOT;
 	}
 
 	/**
+	 * Google+ Follow Button
+	 *
+	 * @see https://developers.google.com/+/web/follow/
+	 * @param string $page_id Google+ page ID to follow.
+	 * @param array $args Optional settings for the follow button.
+	 * @return string $button Follow button markup.
+	 */
+	public static function google_plus_follow_button( $page_id, $args = array() ) {
+
+		$defaults = array(
+			// 'none', 'bubble', or 'vertical-bubble'
+			'annotation' => 'bubble',
+			// '15', '20', or '24'
+			'height' => '20',
+			// 'author' or 'publisher'
+			'rel' => 'author',
+		);
+
+		$args = wp_parse_args( $args, $defaults );
+		$args = array_map( 'esc_attr', $args );
+
+		$page_id = esc_attr( $page_id );
+
+		$button = <<<'EOT'
+<div class="g-follow" data-href="https://plus.google.com/{$page_id}" data-annotation="{$args['annotation']}" data-height="{$args['height']}" data-rel="{$args['rel']}"></div>
+EOT;
+
+		return $button;
+
+	}
+
+	/**
 	 * Twitter Follow Button
 	 *
 	 * @see https://dev.twitter.com/docs/follow-button
