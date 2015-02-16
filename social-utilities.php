@@ -3,7 +3,7 @@
 /**
  * Plugin Name: Social Utilities
  * Plugin URI: http://github.com/athletics/social-utilites
- * Description:
+ * Description: Utilities for working with social networks.
  * Version: 0.1.0
  * Author: Athletics
  * Author URI: http://athleticsnyc.com

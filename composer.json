@@ -1,0 +1,18 @@
+{
+    "name": "athletics/social-utilites",
+    "description": "Utilities for working with social networks.",
+    "homepage": "https://github.com/athletics/social-utilites",
+    "type": "wordpress-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Athletics",
+            "homepage": "http://athleticsnyc.com/"
+        },
+        {
+            "name": "Matthew Spencer",
+            "homepage": "https://matthewspencer.me/",
+            "role": "Developer"
+        }
+    ]
+}
