@@ -152,9 +152,24 @@ function googlePlusEvents() {
  */
 function loadTwitterLibrary() {
 
+	createTwitterObject();
+
 	loadLibrary( 'https://platform.twitter.com/widgets.js', 'twitter-wjs', twitterEvents );
 
 	twitterEvents();
+
+}
+
+/**
+ * Creates twttr window object. Used for callbacks and events.
+ */
+function createTwitterObject() {
+
+	window.twttr = window.twttr || {};
+	window.twttr._e = [];
+	window.twttr.ready = function ( callback ) {
+		window.twttr._e.push( callback );
+	};
 
 }
 
