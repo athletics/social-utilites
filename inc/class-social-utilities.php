@@ -57,7 +57,6 @@ class Social_Utilities {
 
 		return $matches[ $index ];
 
-
 	}
 
 	/**
