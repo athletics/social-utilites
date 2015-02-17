@@ -182,3 +182,7 @@ function twitterEvents() {
 	} );
 
 }
+
+module.exports = {
+	init: init
+};
