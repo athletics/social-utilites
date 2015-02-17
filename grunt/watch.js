@@ -5,8 +5,8 @@ module.exports = {
 			'js/src/**/*.js'
 		],
 		tasks: [
-			'browserify',
-			'uglify'
+			'clean',
+			'browserify'
 		]
 	}
 };
