@@ -102,7 +102,7 @@ function createFacebookRootElement() {
 	var element = document.createElement( 'div' );
 	element.id = 'fb-root';
 
-	document.body.insertBefore( element, document.body.childNodes[0] );
+	document.body.insertBefore( element, document.body.childNodes[ 0 ] );
 
 }
 
