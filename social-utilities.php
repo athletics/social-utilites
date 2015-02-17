@@ -17,3 +17,19 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 require_once( __DIR__ . '/inc/social-utilities.php' );
+
+/**
+ * Enqueue the social utilities script for loading social libraries asynchronously.
+ */
+function enqueue_script() {
+
+	wp_enqueue_script(
+		$handle = 'athletics-social-utilities',
+		$src = plugins_url( 'js/dist/social-utilities.js', __FILE__ ),
+		$deps = array(),
+		$ver = '0.1.0',
+		$in_footer = true
+	);
+
+}
+add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\\enqueue_script' );
