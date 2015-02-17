@@ -1,0 +1,26 @@
+{
+  "name": "social-utilities",
+  "version": "0.2.0",
+  "description": "Utilities for working with social networks.",
+  "dependencies": {
+    "time-grunt": "^1.0.0"
+  },
+  "devDependencies": {
+    "browserify": "^7.0.0",
+    "grunt": "^0.4.5",
+    "grunt-browserify": "^3.2.1",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-phpcs": "^0.2.3",
+    "load-grunt-config": "^0.16.0",
+    "minifyify": "^6.1.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/athletics/social-utilites.git"
+  },
+  "author": "Athletics",
+  "license": "MIT",
+  "homepage": "https://github.com/athletics/social-utilites"
+}
