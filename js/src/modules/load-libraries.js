@@ -75,6 +75,9 @@ function loadLibrary( url, id, callback ) {
 	library.defer = 'true';
 	library.addEventListener( 'load', callback, false );
 
+	var script = document.getElementsByTagName( 'script' )[ 0 ];
+	script.parentNode.insertBefore( library, script );
+
 }
 
 /**
