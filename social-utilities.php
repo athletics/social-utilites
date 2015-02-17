@@ -1,5 +1,7 @@
 <?php
 
+namespace Athletics\Social_Utilities;
+
 /**
  * Plugin Name: Social Utilities
  * Plugin URI: http://github.com/athletics/social-utilites
@@ -14,4 +16,4 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit();
 }
 
-require_once( __DIR__ . '/inc/class-social-utilities.php' );
+require_once( __DIR__ . '/inc/social-utilities.php' );
