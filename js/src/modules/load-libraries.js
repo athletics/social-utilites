@@ -38,7 +38,7 @@ function hasFacebookMarkup() {
  */
 function hasGooglePlusMarkup() {
 
-	return 0 !== document.getElementsByClassName( '.g-follow' ).length;
+	return 0 !== document.getElementsByClassName( 'g-follow' ).length;
 
 }
 
@@ -49,7 +49,7 @@ function hasGooglePlusMarkup() {
  */
 function hasTwitterMarkup() {
 
-	return 0 !== document.getElementsByClassName( '.twitter-follow-button' ).length;
+	return 0 !== document.getElementsByClassName( 'twitter-follow-button' ).length;
 
 }
 
