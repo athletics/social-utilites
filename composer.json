@@ -1,7 +1,7 @@
 {
-    "name": "athletics/social-utilites",
+    "name": "athletics/social-utilities",
     "description": "Utilities for working with social networks.",
-    "homepage": "https://github.com/athletics/social-utilites",
+    "homepage": "https://github.com/athletics/social-utilities",
     "type": "wordpress-plugin",
     "license": "MIT",
     "authors": [
