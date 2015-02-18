@@ -4,7 +4,7 @@ namespace Athletics\Social_Utilities;
 
 /**
  * Plugin Name: Social Utilities
- * Plugin URI: http://github.com/athletics/social-utilites
+ * Plugin URI: http://github.com/athletics/social-utilities
  * Description: Utilities for working with social networks.
  * Version: 0.2.0
  * Author: Athletics

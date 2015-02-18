@@ -18,9 +18,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/athletics/social-utilites.git"
+    "url": "https://github.com/athletics/social-utilities.git"
   },
   "author": "Athletics",
   "license": "MIT",
-  "homepage": "https://github.com/athletics/social-utilites"
+  "homepage": "https://github.com/athletics/social-utilities"
 }
