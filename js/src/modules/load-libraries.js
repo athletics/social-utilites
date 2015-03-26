@@ -27,7 +27,7 @@ function init() {
  */
 function hasFacebookMarkup() {
 
-	return 0 !== document.querySelectorAll( '.fb-follow, .fb-like' ).length;
+	return 0 !== document.querySelectorAll( '.fb-follow, .fb-like, .fb-page' ).length;
 
 }
 
