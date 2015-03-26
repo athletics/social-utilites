@@ -87,7 +87,7 @@ function loadLibrary( url, id, callback ) {
  */
 function loadFacebookLibrary() {
 
-	loadLibrary( 'https://connect.facebook.net/en_US/sdk.js', 'facebook-jssdk', facebookEvents );
+	loadLibrary( 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3', 'facebook-jssdk', facebookEvents );
 
 }
 
