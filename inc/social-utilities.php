@@ -131,6 +131,43 @@ EOT;
 }
 
 /**
+ * Facebook Page Plugin
+ *
+ * @see https://developers.facebook.com/docs/plugins/page-plugin
+ * @since 0.2.2
+ * @param string $page_url The Facebook page URL.
+ * @param array $args Optional settings.
+ * @return string $embed Page plugin markup.
+ */
+function facebook_page_plugin( $page_url, $args = array() ) {
+
+	$defaults = array(
+		// min '280', max '500'
+		'width' => 340,
+		// min '130'
+		'height' => 500,
+		// 'true' or 'false'
+		'hide_cover' => 'false',
+		// 'true' or 'false'
+		'show_facepile' => 'true',
+		// 'true' or 'false'
+		'show_posts' => 'false',
+	);
+
+	$args = wp_parse_args( $args, $defaults );
+	$args = array_map( 'esc_attr', $args );
+
+	$page_url = esc_attr( $page_url );
+
+	$embed = <<<EOT
+<div class="fb-page" data-href="{$page_url}" data-width="{$args['width']}" data-height="{$args['height']}" data-hide-cover="{$args['hide_cover']}" data-show-facepile="{$args['show_facepile']}" data-show-posts="{$args['show_posts']}"></div>
+EOT;
+
+	return $embed;
+
+}
+
+/**
  * Google+ Follow Button
  *
  * @see https://developers.google.com/+/web/follow/

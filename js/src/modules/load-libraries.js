@@ -27,7 +27,7 @@ function init() {
  */
 function hasFacebookMarkup() {
 
-	return 0 !== document.querySelectorAll( '.fb-follow, .fb-like' ).length;
+	return 0 !== document.querySelectorAll( '.fb-follow, .fb-like, .fb-page' ).length;
 
 }
 
@@ -87,7 +87,7 @@ function loadLibrary( url, id, callback ) {
  */
 function loadFacebookLibrary() {
 
-	loadLibrary( 'https://connect.facebook.net/en_US/sdk.js', 'facebook-jssdk', facebookEvents );
+	loadLibrary( 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3', 'facebook-jssdk', facebookEvents );
 
 }
 
