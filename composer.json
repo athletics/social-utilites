@@ -3,7 +3,7 @@
     "description": "Utilities for working with social networks.",
     "homepage": "https://github.com/athletics/social-utilities",
     "type": "wordpress-plugin",
-    "license": "MIT",
+    "license": "Apache-2.0",
     "authors": [
         {
             "name": "Athletics",

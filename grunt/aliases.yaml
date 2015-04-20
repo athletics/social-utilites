@@ -1,4 +1,0 @@
-default:
-  tasks:
-    - 'clean'
-    - 'browserify'

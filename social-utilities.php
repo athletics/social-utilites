@@ -6,7 +6,7 @@ namespace Athletics\Social_Utilities;
  * Plugin Name: Social Utilities
  * Plugin URI: http://github.com/athletics/social-utilities
  * Description: Utilities for working with social networks.
- * Version: 0.2.2
+ * Version: 0.2.3
  * Author: Athletics
  * Author URI: http://athleticsnyc.com
  * Copyright: 2015 Athletics
@@ -25,9 +25,9 @@ function enqueue_script() {
 
 	wp_enqueue_script(
 		$handle = 'athletics-social-utilities',
-		$src = plugins_url( 'js/dist/social-utilities.js', __FILE__ ),
+		$src = plugins_url( 'js/social-junk.min.js', __FILE__ ),
 		$deps = array(),
-		$ver = '0.2.2',
+		$ver = '0.2.3',
 		$in_footer = true
 	);
 
