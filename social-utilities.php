@@ -25,7 +25,7 @@ function enqueue_script() {
 
 	wp_enqueue_script(
 		$handle = 'athletics-social-utilities',
-		$src = plugins_url( 'js/dist/social-utilities.js', __FILE__ ),
+		$src = plugins_url( 'js/social-junk.min.js', __FILE__ ),
 		$deps = array(),
 		$ver = '0.2.2',
 		$in_footer = true
