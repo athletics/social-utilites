@@ -1,6 +1,6 @@
 {
   "name": "social-utilities",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Utilities for working with social networks.",
   "dependencies": {
     "time-grunt": "^1.0.0"
