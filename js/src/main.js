@@ -1,1 +1,0 @@
-require( './modules/load-libraries' ).init();
