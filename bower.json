@@ -1,0 +1,9 @@
+{
+  "name": "social-utilities",
+  "version": "0.2.2",
+  "description": "Utilities for working with social networks.",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "social-junk": "~1.0.1"
+  }
+}
