@@ -48,7 +48,7 @@ function get_username_from_url( $url, $type ) {
  */
 function get_facebook_username( $url ) {
 
-	return static::get_username_from_url( $url, 'facebook' );
+	return get_username_from_url( $url, 'facebook' );
 
 }
 
@@ -60,7 +60,7 @@ function get_facebook_username( $url ) {
  */
 function get_twitter_username( $url ) {
 
-	return static::get_username_from_url( $url, 'twitter' );
+	return get_username_from_url( $url, 'twitter' );
 
 }
 
